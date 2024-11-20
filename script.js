@@ -1,8 +1,15 @@
 function createFactCard(fact) {
     return `
         <div class="fact-card">
-            <h3>${fact.title}</h3>
-            <p>${fact.content}</p>
+            <div class="fact-card-inner">
+                <div class="fact-card-front">
+                    <h3>${fact.title}</h3>
+                    <span class="click-hint">Click to reveal fact</span>
+                </div>
+                <div class="fact-card-back">
+                    <p>${fact.content}</p>
+                </div>
+            </div>
         </div>
     `;
 }
@@ -19,6 +26,13 @@ function displayFacts() {
     const shuffledFacts = shuffleArray([...facts]);
     const factContainer = document.getElementById('factContainer');
     factContainer.innerHTML = shuffledFacts.map(createFactCard).join('');
+    
+    // Add click event listeners to all cards
+    document.querySelectorAll('.fact-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
 }
 
 document.getElementById('refresh-btn').addEventListener('click', displayFacts);
