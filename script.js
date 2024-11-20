@@ -75,3 +75,5 @@ document.getElementById('refresh-btn').addEventListener('click', showNewFact);
 
 // Display the first fact when the page loads
 showNewFact();
+
+
