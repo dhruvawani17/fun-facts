@@ -1,0 +1,43 @@
+# Teen Facts Website
+
+A responsive, interactive website that displays interesting statistical facts about humans. The website features a modern design with animated cards and a shuffle functionality.
+
+## Features
+
+- Responsive design that works on both mobile and desktop devices
+- Interactive fact cards with hover animations
+- Shuffle functionality to randomize fact order
+- Modern gradient background
+- Clean, accessible typography
+- Mobile-first approach with responsive breakpoints
+
+## Technologies Used
+
+- HTML5
+- CSS3 (with Flexbox)
+- Vanilla JavaScript
+- No external dependencies required
+
+## Getting Started
+
+1. Clone this repository or download the HTML file
+2. Open `index.html` in any modern web browser
+3. Click the "Shuffle Facts" button to randomly reorder the facts
+
+## Browser Support
+
+The website works in all modern browsers including:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Customization
+
+To add or modify facts, edit the `facts` array in the JavaScript section of the HTML file. Each fact should follow this structure:
+
+```javascript
+{
+    title: "Fact Title",
+    content: "Fact content goes here"
+}
