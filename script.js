@@ -18,7 +18,7 @@ function shuffleArray(array) {
 function displayFacts() {
     const shuffledFacts = shuffleArray([...facts]);
     const factContainer = document.getElementById('factContainer');
-    factContainer.innerHTML = shuffledFacts.Card).join('');
+    factContainer.innerHTML = shuffledFacts.map(createFactCard).join('');
 }
 
 document.getElementById('refresh-btn').addEventListener('click', displayFacts);
