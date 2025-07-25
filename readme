@@ -19,6 +19,7 @@ A responsive, interactive website that displays interesting statistical facts ab
 - No external dependencies
 
 
+
 ## Getting Started
 
 1. Clone this repository or download the HTML file
@@ -33,12 +34,4 @@ The website works in all modern browsers including:
 - Safari (latest)
 - Edge (latest)
 
-## Customization
 
-To add or modify facts, edit the `facts` array in the JavaScript section of the HTML file. Each fact should follow this structure:
-
-```javascript
-{
-    title: "Fact Title",
-    content: "Fact content goes here"
-}
